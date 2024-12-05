@@ -1,0 +1,17 @@
+---
+# tasks file for httpd
+   - name: update all the ubuntu packages.
+     ansible.builtin.apt:
+      name: "*"
+      state: latest
+   - name: Install apache
+     ansible.builtin.apt:
+      name: apache2
+      state: present
+   - name: copy the file with owner permissions
+     ansible.builtin.copy:
+      src: /files/index.html
+      dest: /var/www/html
+      owner: root
+      group: root
+      mode: 644
