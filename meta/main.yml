@@ -1,7 +1,6 @@
 galaxy_info:
   author: jeevan chouderpalli
-  description: This ansible role is used to update the packages of ubuntu, 
-  install apache on the manage nodes and and run the application on the apache server(on the manage node) using the control node.
+  description: This ansible role is used to update the packages of ubuntu, install apache on the manage nodes and and run the application on the apache server(on the manage node) using the control node.
   company: practice.devops_2024
 
   # If the issue tracker for your role is not on github, uncomment the
